@@ -37,7 +37,7 @@ fileSchema.post("save" , async function(doc) {
             from:"Alok",
             to:doc.email,
             subject:"File uploaded successfully",
-            html:`<h2>Hello Jee</h2> <p>File Uploaded View here: < href="${doc.imageUrl}">${doc.imageUrl}</a></p>`
+            html:`<h2>Hello Jee</h2> <p>File Uploaded View here: <a href="${doc.imageUrl}">${doc.imageUrl}</a></p>`
         })
         console.log("INFO-> ",info)
 
